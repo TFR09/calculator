@@ -9,39 +9,40 @@
 <body>
     <div class="container">
         <div class="calculator">
-            <div class="screen">0</div>
+            <div class="screen" id="screen">0</div>
             <div class="button-container">
                 <div class="row">
                     <button id="clear">AC</button>
-                    <button>DEL</button>
-                    <button>÷</button>
+                    <button id="delete">DEL</button>
+                    <button class="operations" id="divide">÷</button>
                 </div>
                 <div class="row">
                     <button class="nums" value="7">7</button>
                     <button class="nums" value="8">8</button>
                     <button class="nums" value="9">9</button>
-                    <button>-</button>
+                    <button class="operations" id="minus">-</button>
                 </div>
                 <div class="row">
                     <button class="nums" value="4">4</button>
                     <button class="nums" value="5">5</button>
                     <button class="nums" value="6">6</button>
-                    <button>x</button>
+                    <button class="operations" id="multiply">x</button>
                 </div>
                 <div class="row">
                     <button class="nums" value="1">1</button>
                     <button class="nums" value="2">2</button>
                     <button class="nums" value="3">3</button>
-                    <button>+</button>
+                    <button class="operations" id="add">+</button>
                 </div>
                 <div class="row">
                     <button id="zero" class="nums" value="0">0</button>
-                    <button>=</button>
+                    <button id="equals">=</button>
                 </div>
             </div>
             
         </div>    
     </div>
-    
+
+    <script src="calculator.js"></script>
 </body>
 </html>
