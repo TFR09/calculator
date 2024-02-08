@@ -17,6 +17,7 @@ const divide = function(a, b) {
 
 const operate = function(operand, a, b) {
     let answer = operand(Number(a), Number(b));
+    if (answer % 1 !== 0) answer = Math.round(answer * 100) / 100;
     screen.innerHTML = answer;
     num2 = ""
     num1 = answer
